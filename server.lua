@@ -1,11 +1,10 @@
 -- config
-TimeInterval = 60                -- in Minuten
-DistanceToVehicles = 50.0       -- Abstand in Metern
-Command = "delcars"             -- Admin-Kommando
+TimeInterval = 60               -- in minutes
+DistanceToVehicles = 50.0       -- max distance allowed between vehicle and any player before deletion
+Command = "delcars"             -- admin command
 
-AllowedGroups = {               -- Identifiers (steam:, license:, etc.)
-    "steam:11000011abcdef12",
-    "license:7c4bcf123456abcdef"
+AllowedGroups = {               -- identifiers (steam:, license:, etc.)
+    "license:3daad64b1e2edb06ccbc54ba44d4485ade246bdf"
 }
 
 Messages = {
@@ -14,7 +13,7 @@ Messages = {
     [3] = { time = 1, msg = "Cars more than 50 meters away from a ped will be deleted in 1 minute!" },
 }
 
-NotAllowed = "Your bitchass is not allowed to use this command!"
+NotAllowed = "You are not allowed to use this command!"
 DeletedVehs = " vehicles have been deleted!"
 
 -- notify function
